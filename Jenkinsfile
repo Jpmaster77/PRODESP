@@ -1,8 +1,9 @@
 pipeline {
-  agent any
+  agent none
   stages {
 
     stage('usernamePassword') {
+      agent { label 'master' }
       steps {
         script {
           withCredentials([
