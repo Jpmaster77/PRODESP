@@ -1,6 +1,6 @@
 pipeline {
   agent none
-  stages {
+  stdages {
 
     stage('usernamePassword') {
       agent { label 'Cacimbinhas-Slave-Suse12' }
