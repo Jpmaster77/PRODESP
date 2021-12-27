@@ -3,7 +3,7 @@ pipeline {
   stages {
 
     stage('usernamePassword') {
-      agent { label 'Cacimbinhas-Slave-Suse12' }
+      agent { label 'Windows-Slave01' }
       steps {
         script {
           withCredentials([
