@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent BarradoCorda-Slave-CentO8
   stages {
 
     stage('usernamePassword') {
