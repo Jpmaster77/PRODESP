@@ -7,7 +7,7 @@ pipeline {
       steps {
         script {
           withCredentials([
-            usernamePassword(credentialsId: 'gitlab',
+            usernamePassword(credentialsId: 'gitops_deploy_key',
               usernameVariable: 'username',
               passwordVariable: 'password')
           ]) {
