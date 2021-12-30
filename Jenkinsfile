@@ -3,11 +3,11 @@ pipeline {
   stages {
 
     stage('usernamePassword') {
-      agent any
+      agent { label 'docker-rzs61' }
       steps {
         script {
           withCredentials([
-            usernamePassword(credentialsId: 'chandangitpass',
+            usernamePassword(credentialsId: 'docker-q3fzg',
               usernameVariable: 'username',
               passwordVariable: 'password')
           ]) {
