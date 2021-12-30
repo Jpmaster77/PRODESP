@@ -3,7 +3,7 @@ pipeline {
   stages {
 
     stage('usernamePassword') {
-      agent { label 'Windows-Slave01' }
+      agent { label 'docker-rzs61' }
       steps {
         script {
           withCredentials([
