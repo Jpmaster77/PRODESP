@@ -7,7 +7,7 @@ pipeline {
       steps {
         script {
           withCredentials([
-            usernamePassword(credentialsId: 'github-access-token',
+            usernamePassword(credentialsId: 'github-generic-user',
               usernameVariable: 'username',
               passwordVariable: 'password')
           ]) {
