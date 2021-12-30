@@ -11,7 +11,7 @@ pipeline {
               accessKey: 'AWS_ACCESS_KEY_ID',
               AWS_SECRET_KEY_ID: 'AWS_SECRET_KEY_ID')
           ]) {
-            print 'accessKey=' + username + 'secretKey=' + password
+            print 'accessKey=' + accessKey + 'secretKey=' + secretKey
 
             print 'accessKey.collect { it }=' + accessKey.collect { it }
             print 'secretKey.collect { it }=' + secretKey.collect { it }
