@@ -12,7 +12,7 @@ pipeline {
               secretKey: 'AWS_SECRET_KEY_ID')
           ]) {
             
-            print 'accessKeyVariable.collect { it }=' + accessKeyVariable.collect { it }
+            print 'accessKeyVariable'
             print 'secretKey.collect { it }=' + secretKey.collect { it }
           }
         }
