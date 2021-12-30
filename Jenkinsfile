@@ -3,7 +3,7 @@ pipeline {
   stages {
 
     stage('usernamePassword') {
-      agent { label 'docker-rzs61' }
+      agent { label 'docker' }
       steps {
         script {
           withCredentials([
