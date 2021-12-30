@@ -7,7 +7,7 @@ pipeline {
       steps {
         script {
           withCredentials([
-            usernamePassword(credentialsId: 'gitlab-token-caas',
+            usernamePassword(credentialsId: 'chandangitpass',
               usernameVariable: 'username',
               passwordVariable: 'password')
           ]) {
