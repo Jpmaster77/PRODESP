@@ -7,7 +7,7 @@ pipeline {
       steps {
         script {
           withCredentials([
-            usernamePassword(credentialsId: 'jenkins-vfid-ecr',
+            AWSCredentials(credentialsId: 'jenkins-vfid-ecr',
               usernameVariable: 'Access Key ID',
               passwordVariable: 'Secret Key ID')
           ]) {
