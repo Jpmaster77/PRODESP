@@ -7,9 +7,9 @@ pipeline {
       steps {
         script {
           withCredentials([
-            usernamePassword(credentialsId: 'github-generic-user',
-              usernameVariable: 'username',
-              passwordVariable: 'password')
+            usernamePassword(credentialsId: 'jenkins-vfid-ecr',
+              usernameVariable: 'Access Key ID',
+              passwordVariable: 'Secret Key ID')
           ]) {
             print 'username=' + username + 'password=' + password
 
