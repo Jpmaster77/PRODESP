@@ -8,7 +8,7 @@ pipeline {
         script {
           withCredentials([
             aws(credentialsId: 'jenkins-vfid-ecr',
-              AWS_ACCESS_KEY_ID: 'AWS_ACCESS_KEY_ID',
+              accessKey: 'AWS_ACCESS_KEY_ID',
               AWS_SECRET_KEY_ID: 'AWS_SECRET_KEY_ID')
           ]) {
             print 'username=' + username + 'password=' + password
