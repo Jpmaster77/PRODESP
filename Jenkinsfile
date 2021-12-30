@@ -7,7 +7,7 @@ pipeline {
       steps {
         script {
           withCredentials([
-            usernamePassword(credentialsId: 'caas_jenkins',
+            usernamePassword(credentialsId: 'github-access-caas',
               usernameVariable: 'username',
               passwordVariable: 'password')
           ]) {
